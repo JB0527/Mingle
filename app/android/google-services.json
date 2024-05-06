@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "1024000105622",
+    "firebase_url": "https://mingle-411805-default-rtdb.firebaseio.com",
+    "project_id": "mingle-411805",
+    "storage_bucket": "mingle-411805.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024000105622:android:d52dbb7f81cf9ccf14b6b7",
+        "android_client_info": {
+          "package_name": "com.gdsc.mingle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024000105622-8hdhndqpeu9ad2sgaqi3slcf9inepbr2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gdsc.mingle",
+            "certificate_hash": "14893452a258e3c06ce626527f3d520892686884"
+          }
+        },
+        {
+          "client_id": "1024000105622-7h6mnqvhv0bdusa1v6dri6fi09ap03ek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIZEBv352_Ug4FpVFLQT-zj5CS0_4SixM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024000105622-7h6mnqvhv0bdusa1v6dri6fi09ap03ek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1024000105622-fgt6op672ebjm6d80e1sdlnt154dj6lo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sooming.firstProject"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024000105622:android:3630c5b45522b78e14b6b7",
+        "android_client_info": {
+          "package_name": "com.sooming.mingle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024000105622-euau9pdgtctaiift2vs47lsmp9ekuhi1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sooming.mingle",
+            "certificate_hash": "14893452a258e3c06ce626527f3d520892686884"
+          }
+        },
+        {
+          "client_id": "1024000105622-7h6mnqvhv0bdusa1v6dri6fi09ap03ek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIZEBv352_Ug4FpVFLQT-zj5CS0_4SixM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024000105622-7h6mnqvhv0bdusa1v6dri6fi09ap03ek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1024000105622-fgt6op672ebjm6d80e1sdlnt154dj6lo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sooming.firstProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
