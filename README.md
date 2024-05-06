@@ -47,6 +47,7 @@ ChaeEun Lee                    | SangMu Lee    | BongKi Jeong |
 - In conclusion, the rising number of multicultural families has highlighted the issue of low academic achievement among their children, emerging as a societal concern. Despite receiving adequate social education, conflicts between        parents and children persist, predominantly attributed to limited Korean language exposure at home. This deficiency can be traced back to insufficient educational support, exacerbated by the minimal interaction with Korean-speaking      individuals during childhood. This trend appears to intensify amidst Korea's declining birth rate, ushering in a multicultural era. Hence, to address this challenge, we advocate for a solution that fosters joint Korean language          learning for foreign parents and their children.
 
 - This is not just a problem for Korea, but for all countries expanding into multicultural societies.
+- 
 # App Demo
 - This is our Figma
 - https://www.figma.com/file/RJuXsTJhZmHQXTZFoUWgpQ/511?type=design&node-id=0%3A1&mode=design&t=uBAA6fPMWrtptbHy-1
@@ -68,22 +69,11 @@ ChaeEun Lee                    | SangMu Lee    | BongKi Jeong |
 ### 2. Architecture
 ![image](https://github.com/JB0527/audio2text/assets/69136398/0e935d1a-fdf9-40a5-a6c9-78ee9318e5dd)
 
-
-- Spring server application is deployed through Docker and Docker Compose.
-- First, I created a Dockerfile to build an image of my application.
-- Then, I built an image of my application and pushed it to the DockerHub.
-- I also created a docker-compose.yml file with information about my spring application from the hub and Nginx and certbot.
-  [related issue](https://github.com/KUGODS-Wonder/Wonder-Backend/issues/8)
-- I used Nginx to implement the reverse proxy, and certbot for the https protocol.
-- Finally, I can start my app with Docker compose by running a command like "docker-compose up". This starts containers for the app.
-
-
 ### 3. Api Docs
-?
-[Gitbook](https://cksgh1735.gitbook.io/wonder/)
 
 ### 4. ERD
-?
+![image](https://github.com/JB0527/Mingle/assets/69136398/a208be9f-78cf-4f0a-ae45-55d856efe5a5)
+
 
 ## Frontend
 ### 1. Tech Stack
@@ -93,67 +83,42 @@ ChaeEun Lee                    | SangMu Lee    | BongKi Jeong |
 - Google Login
 
 
-### 2. Architecture
+### 2. Server Architecture
 ```
-app
-    ├── common
-    │   ├── util
-    │   └── values
-    │       └── styles
-    ├── data
-    │   ├── enums
-    │   ├── errors
-    │   ├── models
-    │   └── providers
-    ├── modules
-    │   ├── event
-    │   │   ├── bindings
-    │   │   ├── controllers
-    │   │   └── views
-    │   ├── home
-    │   │   ├── bindings
-    │   │   ├── controllers
-    │   │   └── views
-    │   ├── login
-    │   │   ├── bindings
-    │   │   ├── controllers
-    │   │   └── views
-    │   ├── map
-    │   │   ├── bindings
-    │   │   ├── controllers
-    │   │   └── views
-    │   ├── map_detail
-    │   │   ├── bindings
-    │   │   ├── controllers
-    │   │   └── views
-    │   ├── register
-    │   │   ├── bindings
-    │   │   ├── controllers
-    │   │   └── views
-    │   ├── reservation_list
-    │   │   ├── bindings
-    │   │   ├── controllers
-    │   │   └── views
-    │   ├── splash
-    │   │   ├── bindings
-    │   │   ├── controllers
-    │   │   └── views
-    │   ├── walk_track
-    │   │   ├── bindings
-    │   │   ├── controllers
-    │   │   └── views
-    │   └── widgets
-    └── routes
+-server
+📦Mingle
+┣ 📂android
+┃ ┣ 📂.gradle
+┃ ┣ 📂app
+┃ ┃ ┣ 📜build.gradle
+┃ ┃ ┗ 📜google-services.json
+┃ ┣ 📂gradle
+┃ ┃ ┗ 📂wrapper
+┃ ┣ 📂src
+┃ ┣ 📜build.gradle
+┣ 📂assets
+┃ ┣ 📂Box
+┃ ┣ 📂Character
+┃ ┣ 📂fonts
+┃ ┣ 📂Icon
+┃ ┗ 📂imgs
+┣ 📂functions
+┣ 📂lib
+┣ 📜.firebaserc
+┣ 📜.flutter-plugins
+┣ 📜.flutter-plugins-dependencies
+┣ 📜firebase.json
+┣ 📜flutter_launcher_icons.yaml
+┣ 📜google-services.json
 ```
-?
-- We chose MVC pattern as an architecture.
-  - Every feature is divided into modules, and each module has its own controller, view, and binding.
-- The data layer is divided into models and providers. 
-  - The models are used to store data, and the providers are used to communicate with the backend.
-- GetX is used as a state management and navigation tool. 
-  - In exchange for less flexible page transitions, GetX allowed us to quickly implement the app's core features.
-- We used the Google Maps Flutter plugin to implement the map feature. We also used the Google Login plugin to implement the login feature.
+We chose Flutter to show App pages.
+Also to manage database, we use Firebase.
 
+To use Google login, the use Oauth2 Authentication.
+- import package: google_sign_in
+Pages code is in the lib, and database management functions and mange Firebase codes are in functions.
+- the package and dependencies of Firebase is in build.gradle.
+Get and Request operates when the user touches the mike button, so connect to DL server to astimate pronunciation
 # AI
 - For more details, please refer to read me in the subfolder.
 
