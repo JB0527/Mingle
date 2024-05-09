@@ -1,4 +1,4 @@
-# Mingle
+# <img src="https://github.com/JB0527/audio2text/assets/69136398/90aa0d4e-4c4e-45fa-ac45-e290f152f001" width="32" height="32">Mingle
 <p align="center"><img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/contentbuilder/GDG-Bevy-ChapterThumbnail.png" height="200px" width="200px"></p>
 
 Project to participate in 2024 google solution challenge
