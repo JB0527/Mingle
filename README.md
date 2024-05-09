@@ -6,7 +6,8 @@ Project to participate in 2024 google solution challenge
 
 
 ## Top 100 finalist 
-[BongKi Jeong (3).pdf](https://github.com/JB0527/audio2text/files/15210242/BongKi.Jeong.3.pdf)
+![image](https://github.com/JB0527/Mingle/assets/69136398/2986f8a4-cddf-452c-95f1-a7bb5de1ed76)
+
 ![image](https://github.com/JB0527/audio2text/assets/69136398/bb88b37d-0b21-4e86-9edf-93027f36885d)
 
 Congratulations on becoming a 2024 Solution Challenge Global Top 100 Finalist!
