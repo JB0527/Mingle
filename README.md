@@ -5,8 +5,7 @@ Project to participate in 2024 google solution challenge
 
 - our Demo in Youtube
   
-[![Video Label](http://img.youtube.com/vi/'qV6F9mGq8WM'/0.jpg)](https://youtu.be/'qV6F9mGq8WM')
-
+[![Video Label](http://img.youtube.com/vi/qV6F9mGq8WM/0.jpg)](https://youtu.be/qV6F9mGq8WM)
 
 ## Top 100 finalist 
 ![image](https://github.com/JB0527/Mingle/assets/69136398/2986f8a4-cddf-452c-95f1-a7bb5de1ed76)
