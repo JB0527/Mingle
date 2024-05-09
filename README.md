@@ -1,4 +1,4 @@
-# <img src="https://github.com/JB0527/audio2text/assets/69136398/90aa0d4e-4c4e-45fa-ac45-e290f152f001" width="32" height="32">Mingle
+# <img src="https://github.com/JB0527/Mingle/assets/69136398/8f128029-3603-4bb6-8b43-7751fc08af93" width="32" height="32">Mingle
 <p align="center"><img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/contentbuilder/GDG-Bevy-ChapterThumbnail.png" height="200px" width="200px"></p>
 
 Project to participate in 2024 google solution challenge
@@ -17,7 +17,7 @@ ChaeEun Lee                    | SangMu Lee    | BongKi Jeong |
 |------------------------|------------|---------------|
 | - Lead <br/> - Design, PM <br/>- [chaeeun02](https://github.com/chaeeun02)| - Frontend,Backend <br/>- [sangmu1216](https://github.com/sangmu1126) | - AI ,Backend <br/> - [JB0527](https://github.com/JB0527)   |
 
-![image](https://github.com/JB0527/audio2text/assets/69136398/1a56f629-e350-413c-89a0-67f6b0f9d3e2)
+![스크린샷 2024-05-05 012527](https://github.com/JB0527/Mingle/assets/69136398/b37f63ed-c204-44b0-8ca5-6c3ccf04fe16)
 # Target UN-SDGs
 -  4, Quality Education
 -  10, Reduced Inequalities
@@ -26,17 +26,17 @@ ChaeEun Lee                    | SangMu Lee    | BongKi Jeong |
 - # 4, Quality Education
   With our service, you can receive personalized feedback from all multicultural families, including parents and infants, on the pronunciation of their native language, and we can provide high-quality service quickly and easily due to     its easy accessibility. Thereby ensuring inclusive and equitable quality education and promoting lifelong learning opportunities for all.
 
-![image](https://github.com/JB0527/audio2text/assets/69136398/a5ee0279-8123-4096-a042-4d51586d235d)
+![스크린샷 2024-05-05 012615](https://github.com/JB0527/Mingle/assets/69136398/c74b9b35-b96a-4ea0-9e49-28989866e225)
 
 - # 10, Reduced Inequalities
   Through our service, we provide language and pronunciation education so that even if you are a multicultural family, you are not discriminated against by overcoming linguistic barriers and all citizens of the country are provided with   equal opportunities. In particular, it resolves the inequality that can be caused by insufficient language education in terms of academic achievement and social roles.
 
-![image](https://github.com/JB0527/audio2text/assets/69136398/5e7449c5-f0eb-4dd3-9c0e-b5910521f90f)
+![스크린샷 2024-05-05 012755](https://github.com/JB0527/Mingle/assets/69136398/c16c66fb-5ace-420b-9615-2cc8f3896964)
 
 - # 16, Peace, Justice and Strong Institutions
   We provide services suited to the social integration model of countries moving towards multiculturalism. This movement builds a strong multicultural community, fosters a mindset that respects diversity, and promotes and strengthens      non-discriminatory laws and policies for sustainable development.
   
-![image](https://github.com/JB0527/audio2text/assets/69136398/12e115cb-4b1f-4593-9dce-325b4157d852)
+![스크린샷 2024-05-05 012823](https://github.com/JB0527/Mingle/assets/69136398/e6b0c600-3689-452c-98eb-95a6fa574e05)
 
 
 # About our solution
@@ -53,7 +53,6 @@ ChaeEun Lee                    | SangMu Lee    | BongKi Jeong |
 - This is our Figma
 - https://www.figma.com/file/RJuXsTJhZmHQXTZFoUWgpQ/511?type=design&node-id=0%3A1&mode=design&t=uBAA6fPMWrtptbHy-1
 
-![image](https://github.com/JB0527/audio2text/assets/69136398/18b79caf-7462-44ba-b8fd-d7b4ee04d3be)
 
 
 # About Implementation
@@ -68,7 +67,7 @@ ChaeEun Lee                    | SangMu Lee    | BongKi Jeong |
 - GCP
 
 ### 2. Architecture
-![image](https://github.com/JB0527/audio2text/assets/69136398/0e935d1a-fdf9-40a5-a6c9-78ee9318e5dd)
+![image](https://github.com/JB0527/Mingle/assets/69136398/97e9a909-3e8f-4ad4-9d25-aa68bc52364a)
 
 ### 3. Api Docs
 
@@ -124,13 +123,14 @@ Get and Request operates when the user touches the mike button, so connect to DL
 - For more details, please refer to read me in the subfolder.
 
 __FlowChart__
-![image](https://github.com/JB0527/audio2text/assets/69136398/8e3e5c61-c438-438d-9030-bdb9c668464a)
+![image](https://github.com/JB0527/Mingle/assets/69136398/30f66157-b9be-48fa-bf8c-e43c1897b92d)
+
 
 
 - This is the current status of pronunciation symbols for which we will provide feedback.
   
 __SpeechFeedback__
-!![image](https://github.com/JB0527/audio2text/assets/69136398/b37e2b02-31ae-4a10-b2ec-558984868425)
+![image](https://github.com/JB0527/Mingle/assets/69136398/6c695bd4-b05c-451d-a7cc-e61e6efb17f4)
 
 
 
