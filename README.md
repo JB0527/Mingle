@@ -76,8 +76,145 @@ ChaeEun Lee                    | SangMu Lee    | BongKi Jeong |
 ### 3. Api Docs
 
 ### 4. ERD
-![image](https://github.com/JB0527/Mingle/assets/69136398/a208be9f-78cf-4f0a-ae45-55d856efe5a5)
+![image](https://github.com/user-attachments/assets/753553a5-9dd8-4ac2-be34-57cd6a4b99e0)
+> PostgreSQL
+  Project Mingle {
+  database_type: "PostgreSQL"
+}
 
+/* 사용자 및 자녀 프로필 */
+Table User {
+  id uuid [pk, unique]
+  email varchar
+  password varchar
+  name varchar
+  profile_image_url varchar
+  role varchar // enum: PARENT, CHILD, ADMIN
+  registered_via varchar // enum: GOOGLE, KAKAO, EMAIL
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table ChildProfile {
+  id uuid [pk]
+  user_id uuid [ref: > User.id]
+  nickname varchar
+  age int
+  gender varchar // enum: MALE, FEMALE, OTHER
+  avatar_url varchar
+  parent_id uuid [ref: > User.id]
+  created_at timestamp
+}
+
+/* 동화책 콘텐츠 */
+Table StoryBook {
+  id uuid [pk]
+  title varchar
+  author varchar
+  language varchar
+  description text
+  cover_image_url varchar
+  audio_narration_url varchar
+  created_at timestamp
+}
+
+Table StoryPage {
+  id uuid [pk]
+  story_id uuid [ref: > StoryBook.id]
+  page_number int
+  image_url varchar
+  text text
+  audio_url varchar
+}
+
+/* 읽기 기록 */
+Table StoryReadLog {
+  id uuid [pk]
+  child_id uuid [ref: > ChildProfile.id]
+  story_id uuid [ref: > StoryBook.id]
+  started_at timestamp
+  finished_at timestamp
+  completed boolean
+}
+
+/* 발음 평가 */
+Table PronunciationRequest {
+  id uuid [pk]
+  child_id uuid [ref: > ChildProfile.id]
+  text text
+  ipa_reference text
+  uploaded_audio_path varchar
+  status varchar // enum: WAITING, PROCESSING, COMPLETED, FAILED
+  created_at timestamp
+}
+
+Table PronunciationResult {
+  id uuid [pk]
+  request_id uuid [ref: > PronunciationRequest.id]
+  pronunciation_score float
+  fluency_score float
+  intonation_score float
+  ipa_predicted text
+  feedback_text text
+  analysis_audio_path varchar
+  created_at timestamp
+}
+
+/* STT 기록 */
+Table STTRecord {
+  id uuid [pk]
+  child_id uuid [ref: > ChildProfile.id]
+  story_id uuid [ref: > StoryBook.id]
+  page_id uuid [ref: > StoryPage.id]
+  audio_path varchar
+  transcription_text text
+  confidence float
+  created_at timestamp
+}
+
+/* 챗봇 상호작용 */
+Table ChatbotInteraction {
+  id uuid [pk]
+  user_id uuid [ref: > User.id]
+  question text
+  answer text
+  category varchar // enum: LEARNING, PERSONAL, PRONUNCIATION, ETC
+  language varchar
+  created_at timestamp
+}
+
+/* 사용자 설정 */
+Table UserSetting {
+  id uuid [pk]
+  user_id uuid [ref: > User.id]
+  preferred_language varchar
+  subtitle_enabled boolean
+  ipa_display_enabled boolean
+  voice_gender_preference varchar // enum: MALE, FEMALE, NEUTRAL
+  dark_mode_enabled boolean
+  updated_at timestamp
+}
+
+/* 즐겨찾기 */
+Table FavoriteStory {
+  id uuid [pk]
+  child_id uuid [ref: > ChildProfile.id]
+  story_id uuid [ref: > StoryBook.id]
+  created_at timestamp
+}
+
+/* 피드백 */
+Table Feedback {
+  id uuid [pk]
+  user_id uuid [ref: > User.id]
+  type varchar // enum: BUG, SUGGESTION, ETC
+  content text
+  page_context varchar
+  created_at timestamp
+}
+
+
+> 
 
 ## Frontend
 ### 1. Tech Stack
